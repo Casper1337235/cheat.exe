@@ -1,0 +1,302 @@
+html {
+    overflow: hidden;
+}
+
+p {
+    margin: 0 !important;
+}
+
+._overcast_ {
+    
+    z-index: -2;
+
+    margin-left: -288px;
+    margin-top: -800px;
+
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+}
+
+.server_logo {
+    position: absolute;
+    background-image: url(https://i.imgur.com/j0viTTh.png);
+    background-size: 100% 100%;
+    width: 550px;
+    height: 580px;
+
+    margin-top: -400px;
+    margin-left: 380px;
+
+    z-index: 0;
+}
+
+.character_undercast {
+
+    position: absolute;
+    background: rgb(23, 23, 29);
+
+    z-index: -1;
+
+    margin-top: -500px;
+    margin-left: -350px;
+    width: 10000px;
+    height: 10000px;  
+    cursor: not-allowed;
+}
+
+.main-container {
+    display: none;
+    cursor: default;
+    width: 70vw;
+    margin: auto;
+    position: relative;
+    top: 35vh;
+
+    
+}
+
+.character-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    left: 0;
+    right: 0;
+    margin-left: 90px;
+}
+
+.hr_top {
+    margin-top: 5px;
+    margin: 10px;
+    border-top: 2px solid rgb(255, 154, 3);
+}
+
+.over_characters {
+    margin: 10px;
+    z-index: 99999;
+    border-top: 2px solid rgb(255, 154, 3);
+}
+
+.character-box {
+    color: rgb(255, 154, 3);
+    border: 2px solid rgb(255, 154, 3);
+    border-radius: 10px;
+    text-align: center;
+
+    width: 400px;
+    height: 300px;
+
+    margin: -40px;
+    margin-left: -250px;
+    margin-top: 270px;
+
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+    
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.character-box:hover {
+    background: rgb(21, 21, 26);
+    background-color: rgb(21, 21, 26);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 200ms;
+    margin-top: 250px;
+}
+
+.character-info {
+    color: rgb(211, 211, 211);
+    text-align: left!important;
+    text-indent: 12px;
+}
+
+.character-info-new {
+    color: rgb(211, 211, 211);
+    font-weight: 400;
+    text-indent: 12px;
+}
+
+.character-fullname {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    text-indent: 12px;
+    font-weight: 500;
+}
+
+.character-buttons {
+    display: none;
+}
+
+.border-buttons {
+    position: relative;
+}
+
+.btn {
+    border: 2px solid white;
+    background: 0;
+    outline: 0;
+}
+
+.btn-play {
+    color: rgb(209, 209, 209);
+    background: 0;
+    outline: 0;
+
+    margin-left: -155px;
+    margin-top: -860px;
+
+    width: 200px;
+    height: 50px;
+
+    letter-spacing: 0px;
+
+    transition: all 1.5s ease-in;
+
+    animation: buttonClick1 1s;
+}
+
+@keyframes buttonClick1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0.2;
+    }
+
+    to { 
+        transform: translateY(0px);
+    }
+}
+
+.btn-delete {
+    color: rgb(209, 209, 209);
+    background: 0;
+    outline: 0;
+
+    margin-left: 45px;
+    margin-top: -860px;
+
+    width: 220px;
+    height: 50px;
+
+    letter-spacing: 0px;
+
+    transition: all 1.5s ease-in;
+
+    animation: buttonClick2 1s;
+}
+
+@keyframes buttonClick2 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0.2;
+    }
+
+    to { 
+        transform: translateY(0px);
+    }
+}
+
+.btn-play:hover {
+    background: rgba(238, 238, 238, 0.212);
+}
+
+.btn-delete:hover {
+    background: rgba(238, 238, 238, 0.212);
+}
+
+.active-char {
+    margin-top: 250px;
+    background: rgb(21, 21, 26);
+    background-color: rgb(21, 21, 26);
+}
+
+.server_name {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    color: white;
+    
+    position: absolute;
+    transform: translateX(47%);
+    margin-top: -155px;
+    left: 0;
+}
+
+.under_servername {
+    
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    transform: translateX(265%);
+    margin-top: -85px;
+}
+
+
+#box1 {
+    animation: box1 1.2s;
+}
+
+#box2 {
+    animation: box1 .9s;
+}
+
+#box3 {
+    animation: box1 .6s;
+}
+
+#box4 {
+    animation: box1 .3s;
+}
+
+@keyframes box1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0.4;
+    }
+
+    to { 
+        transform: translateY(0px);
+        opacity: 0.95;
+    }
+}
+
+@keyframes box2 {
+    from {
+        transform: translateY(-300px);
+        opacity: 0.3;
+    }
+
+    to { 
+        transform: translateY(0px);
+        opacity: 0.94;
+    }
+}
+
+@keyframes box3 {
+    from {
+        transform: translateY(-500px);
+        opacity: 0.2;
+        opacity: 0.93;
+    }
+
+    to { 
+        transform: translateY(0px);
+    }
+}
+
+@keyframes box4 {
+    from {
+        transform: translateY(-700px);
+        opacity: 0.1;
+        opacity: 0.92;
+    }
+
+    to { 
+        transform: translateY(0px);
+    }
+}
